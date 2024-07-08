@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, serif;
+}
+
+body {
+  background-image: url("/photos/iStock-880710798.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #262a35;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+}
+
+/* Search Input Styles */
+#searchInput {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f9f2;
+  width: 100%;
+  cursor: text;
+}
+
+#searchButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #af602d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+#searchButton:hover {
+  background-color: #d73807;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #2F3645;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 40px;
+}
+
+h1 {
+  text-align: center;
+
+  color: #e7eaf6;
+}
+
+/* Input Styles */
+.recipe-input select {
+  color: #113f67;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 50%;
+  padding: 10px;
+  border: 0px solid;
+  border-radius: 10px;
+  resize: vertical;
+  background-color: #f7f9f2;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.recipe-input {
+  text-align: center;
+}
+
+/* Select Styles */
+select {
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #f7f9f2;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Button Styles */
+.recipe-input button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: #af602d;
+  color: #e7eaf6;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+  cursor: pointer;
+}
+
+.recipe-input button:hover {
+  background-color: #d73807;
+}
+
+.recipe-report button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #011a3c;
+  color: #e7eaf6;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.recipe-report {
+  text-align: center;
+}
+
+.recipe-report button:hover {
+  background-color: #4a57b9;
+}
+
+/* List Styles */
+#list {
+  list-style-type: none;
+}
+
+#list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid #ffeeba;
+}
+
+.recipe-list li.favorite {
+  background-color: #5585b5;
+  border-color: 1px solid #ffeeba;
+}
+
+/* Report Summary Styles */
+#report-summary p {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #38598b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  float: right;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown #dropdownMenuButton {
+  color: #af602d;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7f9f2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: rgb(52, 48, 48);
+  padding: 12px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d78f5e;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

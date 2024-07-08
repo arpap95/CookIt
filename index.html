@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookIt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" href="photos/burger.png">
+  </head>
+  <body>
+    <header>
+      <div class="logo"><i class="fa-solid fa-burger"></i> Cook It</div>
+      <div class="navBar">
+        <input
+          type="text"
+          id="searchInput"
+          name="search"
+          placeholder="Search Recipes"
+        />
+        <button id="searchButton">Search</button>
+      </div>
+    </header>
+    <br /><br />
+    <div class="container">
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <span id="dropdownMenuButton"
+            ><i class="fa-solid fa-arrow-down-wide-short"></i
+          ></span>
+          <div class="dropdown-content">
+            <a href="#" id="showAll">Show All</a>
+            <a href="#" id="favRecipes">Sort By Favorite</a>
+            <a href="#" id="sortBy">Sort By Category</a>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="recipe-input">
+        <input
+          type="text"
+          id="recName"
+          name="recName"
+          placeholder="Recipe Name"
+        /><br /><br />
+        <input
+          type="text"
+          id="desName"
+          name="desName"
+          placeholder="Description"
+        /><br /><br />
+        <div class="select-wrapper">
+          <select id="category" name="category">
+            <option value="">Select Category</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+          </select>
+        </div>
+        <br /><br />
+        <button id="addNew">Add New Recipe</button>
+      </div>
+
+      <div class="recipe-report">
+        <br /><br />
+        <button id="recipeReport">Generate Recipe Report</button>
+        <div id="report-summary"></div>
+      </div>
+
+      <div class="recipe-list">
+        <ul id="list"></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
